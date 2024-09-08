@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+{%load static%}
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyclizar</title>
+
+  <link rel="stylesheet" href="{% static 'css/style.css'%}">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+
+</head>
+
+<body id="top">
+  <header class="header" data-header>
+    <div class="container">
+
+      <div class="overlay" data-overlay></div>
+
+      <a href="{%url 'index'%}" class="logo">
+        <p class='logo-log'>Cyclizar</p>
+      </a>
+
+      <button class="nav-open-btn" data-nav-open-btn aria-label="Open Menu">
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+        <a href="{%url 'index'%}" class="logo">
+          Cyclizar
+        </a>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="{%url 'index'%}" class="navbar-link">Início</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Monte sua bike</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Produtos</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="{%url 'blog'%}" target="_self" class="navbar-link">Blog</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#contatos" class="navbar-link">Contato</a>
+          </li>
+
+        </ul>
+
+        <ul class="nav-action-list">
+
+          <li>
+            <button class="nav-action-btn">
+              <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+
+              <span class="nav-action-text">Search</span>
+            </button>
+          </li>
+
+          <li>
+            <a href="#" class="nav-action-btn">
+              <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+              <span class="nav-action-text">Login / Register</span>
+            </a>
+          </li>
+
+          <li>
+            <button class="nav-action-btn">
+              <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+
+              <span class="nav-action-text">Wishlist</span>
+
+              <data class="nav-action-badge" value="5" aria-hidden="true">5</data>
+            </button>
+          </li>
+
+          <li>
+            <button class="nav-action-btn">
+              <ion-icon name="bag-outline" aria-hidden="true"></ion-icon>
+
+              <data class="nav-action-text" value="318.00">Basket: <strong>$318.00</strong></data>
+
+              <data class="nav-action-badge" value="4" aria-hidden="true">4</data>
+            </button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+      <section class="section hero" style="background-image: url('{% static "images/banner03.png" %}')">
+        <div class="container">
+
+          <h2 class="h1 hero-title">
+            Nova coleção <strong>Bikes Eletricas de <br>Inverno</strong>
+          </h2>
+
+          <p class="hero-text">
+            Cyclizar pode ser visto correndo pelos campos e planícies de Paldea. 
+            É conhecido por ter um forte vínculo com seu treinador e ser muito rápido. 
+            Cyclizar também é conhecido por sua resistência e agilidade, tornando-o um parceiro confiável para longas jornadas.
+          </p>
+
+          <button class="btn btn-primary">
+            <span>Confira Agora</span>
+
+            <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+        </div>
+      </section>
+      <section class="section collection">
+        <div class="container">
+
+          <ul class="collection-list has-scrollbar">
+
+            <li>
+              <div class="collection-card" style="background-image: url('{% static "images/Design sem nome (12) (1).png"%}')">
+                <h3 class="h4 card-title">Street Bikes</h3>
+
+                <a href="#" class="btn btn-secondary">
+                  <span>Explorar</span>
+
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+            </li>
+
+            <li>
+              <div class="collection-card" style="background-image: url('{% static "images/Design sem nome (13) (1).png"%}')">
+                <h3 class="h4 card-title">Mountain Bikes</h3>
+
+                <a href="#" class="btn btn-secondary">
+                  <span>Explorar</span>
+
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+            </li>
+
+            <li>
+              <div class="collection-card" style="background-image: url('{% static "images/Design sem nome (14) (1).png"%}')">
+                <h3 class="h4 card-title">Road Bikes</h3>
+
+                <a href="#" class="btn btn-secondary">
+                  <span>Explorar</span>
+
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+      <section class="section product">
+        <div class="container">
+
+          <h2 class="h2 section-title">Ofertas</h2>
+
+          <ul class="filter-list">
+
+            <li>
+              <button class="filter-btn  active">Todas</button>
+            </li>
+
+            <li>
+              <button class="filter-btn">Bike</button>
+            </li>
+
+            <li>
+              <button class="filter-btn">Peças</button>
+            </li>
+
+            <li>
+              <button class="filter-btn">Acessório</button>
+            </li>
+
+            
+
+          </ul>
+
+          <ul class="product-list">
+
+            <li class="product-item">
+              <div class="product-card" tabindex="0">
+
+                <figure class="card-banner">
+                  <img src="{%static '/images/prod1.png'%}" width="312" height="350" loading="lazy"
+                    alt="Running Sneaker Shoes" class="image-contain">
+
+                  <div class="card-badge">-50%</div>
+
+                  <ul class="card-action-list">
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-1">
+                        <ion-icon name="cart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-1">Adicionar ao Carrinho</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-2">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-2">Adicionar a Lista de Desejos</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-3">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-3">Olhadinha Rápida</div>
+                    </li>
+
+                    
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-cat">
+                    <a href="#" class="card-cat-link">Peças</a> /
+                    <a href="#" class="card-cat-link">Street</a>
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">KIT SRAM SX EAGLE 1X12V | 11-50</a>
+                  </h3>
+
+                  <data class="card-price" value="1.709,10">R$ 1.709,10<del>R$ 3.490,00</del></data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="product-item">
+              <div class="product-card" tabindex="0">
+
+                <figure class="card-banner">
+                  <img src="{%static 'images/prod2.png'%}" width="312" height="350" loading="lazy"
+                    alt="Leather Mens Slipper" class="image-contain">
+
+                  <ul class="card-action-list">
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-1">
+                        <ion-icon name="cart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-1">Adicionar ao Carrinho</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-2">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-2">Adicionar a Lista de Desejos</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-3">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-3">Olhadinha Rapida</div>
+                    </li>
+
+                    
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-cat">
+                    <a href="#" class="card-cat-link">Peças</a> /
+                    <a href="#" class="card-cat-link">Mountain</a>
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">SELIM SUPER CONFORT GTS M1 VAZADO</a>
+                  </h3>
+
+                  <data class="card-price" value="71,91">R$ 71,91<del>R$ 110,00</del></data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="product-item">
+              <div class="product-card" tabindex="0">
+
+                <figure class="card-banner">
+                  <img src="{%static 'images/prod3.png'%}" width="312" height="350" loading="lazy"
+                    alt="Simple Fabric Shoe" class="image-contain">
+
+                  <div class="card-badge">New</div>
+
+                  <ul class="card-action-list">
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-1">
+                        <ion-icon name="cart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-1">Adicionar ao Carrinho</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-2">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-2">Adicionar a Lista de Desejos</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-3">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-3">Olhadinha Rapida</div>
+                    </li>
+
+                    
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-cat">
+                    <a href="#" class="card-cat-link">Street</a> /
+                    <a href="#" class="card-cat-link">Mulher</a>
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">BICICLETA FEMININA 29 GTS M1 FREIO A DISCO</a>
+                  </h3>
+
+                  <data class="card-price" value="944,10">R$ 944,10<del>R$ 1.999,00</del></data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="product-item">
+              <div class="product-card" tabindex="0">
+
+                <figure class="card-banner">
+                  <img src="{%static 'images/prod4.png'%}" width="312" height="350" loading="lazy"
+                    alt="Air Jordan 7 Retro " class="image-contain">
+
+                  <div class="card-badge"> -25%</div>
+
+                  <ul class="card-action-list">
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-1">
+                        <ion-icon name="cart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-1">Adicionar ao Carrinho</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-2">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-2">Adicionar a Lista de Desejos</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-3">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-3">Olhadinha Rapida</div>
+                    </li>
+
+                    
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-cat">
+                    <a href="#" class="card-cat-link">Homem</a> /
+                    <a href="#" class="card-cat-link">Sports</a>
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">CAMISETA CICLISMO GTSM1 G TEAM LONGA</a>
+                  </h3>
+
+                  <data class="card-price" value="89,01">R$ 89,01 <del>R$ 120.21</del></data>
+
+                </div>
+
+              </div>
+            </li>
+          </ul>
+
+        </div>
+      </section>
+      <section class="section cta">
+        <div class="container">
+
+          <ul class="cta-list">
+
+            <li>
+              <div class="cta-card" style="background-image: url('{% static "images/Design sem nome (19).png" %}')">
+                <p class="card-subtitle">Comunidade</p>
+
+                <h3 class="h2 card-title">Entre Para o Nosso Blog</h3>
+
+                <a href="{%url 'blog'%}" target="_self" class="btn btn-link">
+                  <span>Confira</span>
+
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+            </li>
+
+            <li>
+              <div class="cta-card" style="background-image: url('{% static "images/Design sem nome (18).png" %}')">
+                <p class="card-subtitle">Montagem</p>
+
+                <h3 class="h2 card-title">Monte Sua Própria Bike</h3>
+
+                <a href="#" class="btn btn-link">
+                  <span>Comece Já</span>
+
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+      <section class="section service">
+        <div class="container">
+
+          <ul class="service-list">
+
+            <li class="service-item">
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="{%static 'images/service-1.png'%}" width="53" height="28" loading="lazy" alt="Service icon">
+                </div>
+
+                <div>
+                  <h3 class="h4 card-title">Entrega gratis</h3>
+
+                  <p class="card-text">
+                    Para pedidos acima de <span>R$ 200</span>
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="{%static 'images/service-2.png'%}" width="43" height="35" loading="lazy" alt="Service icon">
+                </div>
+
+                <div>
+                  <h3 class="h4 card-title">Pagamento rapido</h3>
+
+                  <p class="card-text">
+                    100% Seguro
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="{%static 'images/service-3.png'%}" width="40" height="40" loading="lazy" alt="Service icon">
+                </div>
+
+                <div>
+                  <h3 class="h4 card-title">Devolução gratuita</h3>
+
+                  <p class="card-text">
+                    Dinheiro de volta em 30 dias
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="{% static 'images/service-4.png' %}" width="40" height="40" loading="lazy" alt="Service icon">
+                </div>
+
+                <div>
+                  <h3 class="h4 card-title">Suporte 24h</h3>
+
+                  <p class="card-text">
+                    Atendimento rapido
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <footer class="footer">
+
+    <div class="footer-top section">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <p class="logo-log" >Cyclizar</p>
+          </a>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-google"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-link-box">
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title" id="contatos">Fale conosco</p>
+            </li>
+
+            <li>
+              <address class="footer-link">
+                <ion-icon name="location"></ion-icon>
+
+                <span class="footer-link-text">
+                  Rua Francisco Urquiza Machado, Meladão, IFPI - FLoriano/PI
+                </span>
+              </address>
+            </li>
+
+            <li>
+              <a href="tel:+557343673257" class="footer-link">
+                <ion-icon name="call"></ion-icon>
+
+                <span class="footer-link-text">+55 89 9430-7175</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="mailto:footcap@help.com" class="footer-link">
+                <ion-icon name="mail"></ion-icon>
+
+                <span class="footer-link-text">cyclizar@hotmail.com</span>
+              </a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">Minha Conta</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                <span class="footer-link-text">Conta</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                <span class="footer-link-text">Carrinho +</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                <span class="footer-link-text">Favoritos</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                <span class="footer-link-text">Meus pedidos</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                <span class="footer-link-text">Log in</span>
+              </a>
+            </li>
+
+          </ul>
+
+          <div class="footer-list">
+
+            <p class="footer-list-title">Peças:</p>
+            <ul class="footer-list">  
+              <li>
+                <a href="#" class="footer-link">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+  
+                  <span class="footer-link-text">Mountain Bike</span>
+                </a>
+              </li>
+  
+              <li>
+                <a href="#" class="footer-link">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+  
+                  <span class="footer-link-text">Street Bike</span>
+                </a>
+              </li>
+  
+              <li>
+                <a href="#" class="footer-link">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+  
+                  <span class="footer-link-text">Road Bike</span>
+                </a>
+              </li>
+            </ul>
+            
+
+          </div>
+
+          <div class="footer-list">
+
+            <p class="footer-list-title">Newsletters</p>
+
+            <p class="newsletter-text">
+              Nos envie algo.
+            </p>
+
+            <form action="" class="newsletter-form">
+              <input type="email" name="email" required placeholder="Email Address" class="newsletter-input">
+
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2024 <a href="#" class="copyright-link">Cyclizar</a>. All Rights Reserved
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+  <a href="#top" class="go-top-btn" data-go-top>
+    <ion-icon name="arrow-up-outline"></ion-icon>
+  </a>
+
+  <script src="{% static 'js/script.js'%}"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

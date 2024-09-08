@@ -1,0 +1,101 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyBlog</title>
+
+    <link rel="stylesheet" href="{% static 'css/sblog.css'%}">
+</head>
+<body>
+   <section class="ent-ent" >
+    <div class="text-ent">
+        <h1>
+          Bem Vindo ao Cyclizar Community
+        </h1>
+
+        <p>
+            Cyclizar é o seu guia virtual para tudo relacionado ao mundo do ciclismo. <br> De dicas essenciais de manutenção de bicicletas a relatos inspiradores de <br> viagens ciclísticas, nosso blog é o ponto de encontro para ciclistas de todos os níveis de experiência.
+        </p>
+    </div>   
+        <img class="img-ent" src="{% static 'images/Blog post-cuate.png' %}" alt="Entrada">
+    </section>     
+    
+    <h1 class="post">Posts Recentes</h1>
+  <section class="card-section">  
+    <div class="card-container">
+        <a href="/" class="hero-image-container">
+          <img class="hero-image" src="{% static 'images/imagem_2024-06-21_132624964.png' %}" alt="Spinning glass cube"/>
+        </a>
+        <main class="main-content">
+          <h1><a href="#">Capitão da DSM-Firmenich PostNL anuncia aposentadoria</a></h1>
+          <div class="flex-row">
+            <div class="time-left">
+              <img src="https://i.postimg.cc/prpyV4mH/clock-selection-no-bg.png" alt="clock" class="small-image"/>
+              <p>Hoje</p>
+            </div>
+          </div>
+        </main>
+        <div class="card-attribute">
+          <img src="https://i.postimg.cc/SQBzNQf1/image-avatar.png" alt="avatar" class="small-avatar"/>
+          <p><span><a href="#">Davi Nunes</a></span></p>
+        </div>
+      </div>
+    </div>
+    <div class="card-container">
+        <a href="/" class="hero-image-container">
+          <img class="hero-image" src="{% static 'images/imagem_2024-06-21_132928549.png' %}" alt="Spinning glass cube"/>
+        </a>
+        <main class="main-content">
+          <h1><a href="#">São José é reconhecida como ‘Amiga da Bicicleta’ pela ABCSP</a></h1>
+          <div class="flex-row">
+            <div class="time-left">
+              <img src="https://i.postimg.cc/prpyV4mH/clock-selection-no-bg.png" alt="clock" class="small-image"/>
+              <p>Ontem</p>
+            </div>
+          </div>
+        </main>
+        <div class="card-attribute">
+          <img src="https://i.postimg.cc/SQBzNQf1/image-avatar.png" alt="avatar" class="small-avatar"/>
+          <p><span><a href="#">Davi Nunes</a></span></p>
+        </div>
+      </div>
+  </div>
+    </div>
+    <div class="card-container">
+        <a href="/" class="hero-image-container">
+          <img class="hero-image" src="{% static 'images/imagem_2024-06-21_133627964.png' %}" alt="Spinning glass cube"/>
+        </a>
+        <main class="main-content">
+          <h1><a href="#">O Top 10 das melhores bikes do primeiro semestre</a></h1>
+          <div class="flex-row">
+            <div class="time-left">
+              <img src="https://i.postimg.cc/prpyV4mH/clock-selection-no-bg.png" alt="clock" class="small-image"/>
+              <p>2 dias atras</p>
+            </div>
+          </div>
+        </main>
+        <div class="card-attribute">
+          <img src="https://i.postimg.cc/SQBzNQf1/image-avatar.png" alt="avatar" class="small-avatar"/>
+          <p><span><a href="#">Davi Nunes</a></span></p>
+        </div>
+      </div>
+  </div>
+  
+</section>
+<button>Ver Mais</button>
+  </body>
+
+  <footer>
+    <div class="footer-bottom">
+        <div>
+  
+          <p class="copyright">
+            &copy; 2024 <a href="{% url 'index' %}" class="copyright-link">Cyclizar</a>. All Rights Reserved
+          </p>
+  
+        </div>
+      </div>
+  </footer>
+</html>
