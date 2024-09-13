@@ -11,17 +11,19 @@ from django.contrib import messages
 import json
 
 def home(request):
-    #template = loader.get_template('index.html')
-    #context = {'image':"{%static 'images/Design sem nome (12) (1).png'%}"}
-    #return HttpResponse(template.render(request))
     return render(request, 'index.html')
 
 def blog(request):
     return render(request, 'blog.html')
 
 def form(request):
-    form = Form_Register_User()
-    return render(request, 'register_form.html', {'form':form})
+    return render(request, 'form-registro.html')
+
+def lform(request):
+    return render(request, 'form-login.html')
+
+def monta(request):
+    return render(request, 'montagem-page.html')
 
 @api_view(['GET','POST','PUT','DELETE'])
 def user_manager(request):

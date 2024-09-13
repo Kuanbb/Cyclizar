@@ -1,0 +1,88 @@
+:root{
+    --maximum-blue-green_10: hsla(185, 75%, 45%, 0.1);
+    --rich-black-fogra-29: hsl(217, 28%, 9%);
+    --gray-x-11-gray: hsl(0, 0%, 74%);
+    --oxford-blue_60: hsla(230, 41%, 14%, 0.6);
+    --bittersweet: hsl(229, 83%, 61%);
+    --smoky-black: rgb(7, 6, 1);
+    --gainsboro: hsl(0, 0%, 88%);
+    --black_90: hsla(0, 0%, 0%, 0.9);
+    --cultured: hsl(200, 12%, 95%);
+    --salmon: hsl(229, 83%, 61%);
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+    --onyx: hsl(0, 0%, 27%);
+    --laj: hsl(24, 91%, 51%);
+    --alg: hsl(229, 83%, 61%);
+    --omg: #00b4fc;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    background-color: #201b2c;
+    color: #00b4fc;
+    flex-direction: column;
+}
+.container {
+    display: flex;
+    width: 80%;
+}
+.column {
+    flex: 1;
+    padding: 20px;
+}
+.options, .selected {
+    list-style: none;
+    padding: 0;
+}
+.options li, .selected li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #2f2841;
+    box-shadow: 0px 10px 40px #00000056;
+}
+.options img, .selected img {
+    width: 50px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #00b4fc;
+}
+.options button, .selected button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.options button {
+    background-color: #00b4fc; /* Green for add */
+}
+.selected button {
+    background-color: #8f0be7; /* Red for remove */
+}
+.placeholder {
+    background-color: #e0e0e0;
+    color: #777;
+    border: 1px dashed #ccc;
+    justify-content: center;
+}
+.search-bar {
+    margin-bottom: 20px;
+}
+.search-bar input {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    border-radius: 5px;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style-form.css'%}">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="main-login">
+        <div class="left-login">
+            <h1>Que tal se juntar a nosso time?</h1>
+        </div>
+        <div class="right-login">
+            <form class="card-login">
+                <h1>CADASTRO</h1>
+                <div class="textfield">
+                    <label for="usuario">Nome Completo</label>
+                    <input type="text" name="usuario" placeholder="Ex: Eric Cartman">
+                </div>
+                <div class="textfield">
+                    <label for="usuario">E-mail</label>
+                    <input type="email" name="email" placeholder="Ex: kyle2001@torres.com">
+                </div>
+                <div class="textfield">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" placeholder="Senha">
+                </div>
+                <button class="btn-login">Registrar-se</button>
+                <div class="link-cad">
+                    <a href="{% url 'logform'%}">Entrar</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

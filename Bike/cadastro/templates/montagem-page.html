@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Configurator</title>
+    <link rel="stylesheet" href="{% static 'css/style-montagem.css'%}">
+</head>
+<body>
+<h1>Que tal montar uma bike?</h1>    
+<div class="container">
+    <div class="column">
+        <h3>Selecione as peças</h3>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Pesquise por uma peça...">
+        </div>
+        <ul class="options">
+            <li data-part="Frame">
+                <img src="https://via.placeholder.com/50" alt="Frame">
+                <span>Quadro de alumínio</span>
+                <button>+</button>
+            </li>
+            <li data-part="Wheels">
+                <img src="https://via.placeholder.com/50" alt="Wheels">
+                <span>Rodas de carbono</span>
+                <button>+</button>
+            </li>
+            <li data-part="Saddle">
+                <img src="https://via.placeholder.com/50" alt="Saddle">
+                <span>Selim de couro</span>
+                <button>+</button>
+            </li>
+            <li data-part="Handlebar">
+                <img src="https://via.placeholder.com/50" alt="Handlebar">
+                <span>Guidão drop</span>
+                <button>+</button>
+            </li>
+            <li data-part="Pedals">
+                <img src="https://via.placeholder.com/50" alt="Pedals">
+                <span>Pedais de alumínio</span>
+                <button>+</button>
+            </li>
+        </ul>
+    </div>
+
+    <div class="column">
+        <h3>Componentes Selecionados</h3>
+        <ul class="selected">
+            <li class="placeholder" data-part="Frame">Selecione o Quadro</li>
+            <li class="placeholder" data-part="Wheels">Selecione as Rodas</li>
+            <li class="placeholder" data-part="Saddle">Selecione o Selim</li>
+            <li class="placeholder" data-part="Handlebar">Selecione o Guidão</li>
+            <li class="placeholder" data-part="Pedals">Selecione os Pedais</li>
+        </ul>
+    </div>
+</div>
+
+</body>
+<script src="{% static 'js/script-montagem.js'%}"></script>
+</html>
